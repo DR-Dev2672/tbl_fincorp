@@ -82,10 +82,15 @@ export const Header = () => {
           </Button>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+            href="/verify"
+            >
+            
             <Button className="bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg sm:rounded-xl shadow-lg shadow-blue-500/25 border-0 font-semibold text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-2.5">
               Get Started
               <Sparkles className="ml-1 sm:ml-2 h-4 w-4" />
             </Button>
+            </Link>
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
