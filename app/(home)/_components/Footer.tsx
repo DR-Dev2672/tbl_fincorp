@@ -108,22 +108,26 @@ export const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            
             <h3 className="font-bold text-xl text-white mb-6 flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-purple-400" />
               Services
             </h3>
+            
             <ul className="space-y-3">
               {[
-                { label: "Loan Processing" },
-                { label: "Credit Assessment" },
-                { label: "Financial Planning" },
-                { label: "Investment Advisory" },
-                { label: "Insurance Solutions" },
+                { label: "Loan Processing",key:"services/loan" },
+                { label: "Credit Assessment",key:"services/credit" },
+                { label: "Financial Planning",key:"services/finance" },
+                { label: "Investment Advisory",key:"services/investment" },
+                { label: "Insurance Solutions",key:"services/insurance" },
               ].map((item) => (
                 <li key={item.label}>
                   <span className="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer flex items-center gap-2">
                     <div className="h-1.5 w-1.5 bg-blue-400 rounded-full"></div>
+                    <Link href={item.key}>
                     {item.label}
+                    </Link>
                   </span>
                 </li>
               ))}
