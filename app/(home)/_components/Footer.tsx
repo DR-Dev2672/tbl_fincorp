@@ -116,11 +116,11 @@ export const Footer = () => {
             
             <ul className="space-y-3">
               {[
-                { label: "Loan Processing",key:"services/loan" },
-                { label: "Credit Assessment",key:"services/credit" },
-                { label: "Financial Planning",key:"services/finance" },
-                { label: "Investment Advisory",key:"services/investment" },
-                { label: "Insurance Solutions",key:"services/insurance" },
+                { label: "Loan Processing",key:"/services/loan" },
+                { label: "Credit Assessment",key:"/services/credit" },
+                { label: "Financial Planning",key:"/services/finance" },
+                { label: "Investment Advisory",key:"/services/investment" },
+                { label: "Insurance Solutions",key:"/services/insurance" },
               ].map((item) => (
                 <li key={item.label}>
                   <span className="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer flex items-center gap-2">
